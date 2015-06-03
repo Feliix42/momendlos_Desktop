@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB74A7511B1F089200A05F6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74A7501B1F089200A05F6F /* AppDelegate.swift */; };
+		CB74A7531B1F089200A05F6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB74A7521B1F089200A05F6F /* Images.xcassets */; };
+		CB74A7561B1F089200A05F6F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB74A7541B1F089200A05F6F /* MainMenu.xib */; };
+		CB74A7621B1F089200A05F6F /* momendlos_DesktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74A7611B1F089200A05F6F /* momendlos_DesktopTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB74A75C1B1F089200A05F6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB74A7431B1F089200A05F6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB74A74A1B1F089200A05F6F;
+			remoteInfo = momendlos_Desktop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB74A74B1B1F089200A05F6F /* momendlos_Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = momendlos_Desktop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB74A74F1B1F089200A05F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB74A7501B1F089200A05F6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB74A7521B1F089200A05F6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB74A7551B1F089200A05F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CB74A75B1B1F089200A05F6F /* momendlos_DesktopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = momendlos_DesktopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB74A7601B1F089200A05F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB74A7611B1F089200A05F6F /* momendlos_DesktopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momendlos_DesktopTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB74A7481B1F089200A05F6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB74A7581B1F089200A05F6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB74A7421B1F089200A05F6F = {
+			isa = PBXGroup;
+			children = (
+				CB74A74D1B1F089200A05F6F /* momendlos_Desktop */,
+				CB74A75E1B1F089200A05F6F /* momendlos_DesktopTests */,
+				CB74A74C1B1F089200A05F6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB74A74C1B1F089200A05F6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB74A74B1B1F089200A05F6F /* momendlos_Desktop.app */,
+				CB74A75B1B1F089200A05F6F /* momendlos_DesktopTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB74A74D1B1F089200A05F6F /* momendlos_Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				CB74A7501B1F089200A05F6F /* AppDelegate.swift */,
+				CB74A7521B1F089200A05F6F /* Images.xcassets */,
+				CB74A7541B1F089200A05F6F /* MainMenu.xib */,
+				CB74A74E1B1F089200A05F6F /* Supporting Files */,
+			);
+			path = momendlos_Desktop;
+			sourceTree = "<group>";
+		};
+		CB74A74E1B1F089200A05F6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB74A74F1B1F089200A05F6F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB74A75E1B1F089200A05F6F /* momendlos_DesktopTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB74A7611B1F089200A05F6F /* momendlos_DesktopTests.swift */,
+				CB74A75F1B1F089200A05F6F /* Supporting Files */,
+			);
+			path = momendlos_DesktopTests;
+			sourceTree = "<group>";
+		};
+		CB74A75F1B1F089200A05F6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB74A7601B1F089200A05F6F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB74A74A1B1F089200A05F6F /* momendlos_Desktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB74A7651B1F089200A05F6F /* Build configuration list for PBXNativeTarget "momendlos_Desktop" */;
+			buildPhases = (
+				CB74A7471B1F089200A05F6F /* Sources */,
+				CB74A7481B1F089200A05F6F /* Frameworks */,
+				CB74A7491B1F089200A05F6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = momendlos_Desktop;
+			productName = momendlos_Desktop;
+			productReference = CB74A74B1B1F089200A05F6F /* momendlos_Desktop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB74A75A1B1F089200A05F6F /* momendlos_DesktopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB74A7681B1F089200A05F6F /* Build configuration list for PBXNativeTarget "momendlos_DesktopTests" */;
+			buildPhases = (
+				CB74A7571B1F089200A05F6F /* Sources */,
+				CB74A7581B1F089200A05F6F /* Frameworks */,
+				CB74A7591B1F089200A05F6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB74A75D1B1F089200A05F6F /* PBXTargetDependency */,
+			);
+			name = momendlos_DesktopTests;
+			productName = momendlos_DesktopTests;
+			productReference = CB74A75B1B1F089200A05F6F /* momendlos_DesktopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB74A7431B1F089200A05F6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Felix Döring";
+				TargetAttributes = {
+					CB74A74A1B1F089200A05F6F = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					CB74A75A1B1F089200A05F6F = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = CB74A74A1B1F089200A05F6F;
+					};
+				};
+			};
+			buildConfigurationList = CB74A7461B1F089200A05F6F /* Build configuration list for PBXProject "momendlos_Desktop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB74A7421B1F089200A05F6F;
+			productRefGroup = CB74A74C1B1F089200A05F6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB74A74A1B1F089200A05F6F /* momendlos_Desktop */,
+				CB74A75A1B1F089200A05F6F /* momendlos_DesktopTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB74A7491B1F089200A05F6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB74A7531B1F089200A05F6F /* Images.xcassets in Resources */,
+				CB74A7561B1F089200A05F6F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB74A7591B1F089200A05F6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB74A7471B1F089200A05F6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB74A7511B1F089200A05F6F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB74A7571B1F089200A05F6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB74A7621B1F089200A05F6F /* momendlos_DesktopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB74A75D1B1F089200A05F6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB74A74A1B1F089200A05F6F /* momendlos_Desktop */;
+			targetProxy = CB74A75C1B1F089200A05F6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB74A7541B1F089200A05F6F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB74A7551B1F089200A05F6F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB74A7631B1F089200A05F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB74A7641B1F089200A05F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CB74A7661B1F089200A05F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = momendlos_Desktop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB74A7671B1F089200A05F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = momendlos_Desktop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB74A7691B1F089200A05F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = momendlos_DesktopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/momendlos_Desktop.app/Contents/MacOS/momendlos_Desktop";
+			};
+			name = Debug;
+		};
+		CB74A76A1B1F089200A05F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = momendlos_DesktopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/momendlos_Desktop.app/Contents/MacOS/momendlos_Desktop";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB74A7461B1F089200A05F6F /* Build configuration list for PBXProject "momendlos_Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB74A7631B1F089200A05F6F /* Debug */,
+				CB74A7641B1F089200A05F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB74A7651B1F089200A05F6F /* Build configuration list for PBXNativeTarget "momendlos_Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB74A7661B1F089200A05F6F /* Debug */,
+				CB74A7671B1F089200A05F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB74A7681B1F089200A05F6F /* Build configuration list for PBXNativeTarget "momendlos_DesktopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB74A7691B1F089200A05F6F /* Debug */,
+				CB74A76A1B1F089200A05F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB74A7431B1F089200A05F6F /* Project object */;
+}
