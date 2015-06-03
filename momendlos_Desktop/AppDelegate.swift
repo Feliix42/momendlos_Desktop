@@ -7,6 +7,11 @@
 //
 
 import Cocoa
+import SwiftyTimer
+import Fabric
+import Crashlytics
+
+
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -15,7 +20,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        Fabric.with([Crashlytics()])
+
+        setWallpaper()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
