@@ -11,6 +11,9 @@
 		CB02E2321B1F0A1200593083 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB02E2311B1F0A1200593083 /* Update.swift */; };
 		CB02E2371B1F0B0E00593083 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB02E2351B1F0B0E00593083 /* Fabric.framework */; };
 		CB02E2381B1F0B0E00593083 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB02E2361B1F0B0E00593083 /* Crashlytics.framework */; };
+		CB0F50421B1FC06400882B6F /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0F50411B1FC06400882B6F /* Sparkle.framework */; };
+		CB0F50441B1FC0C100882B6F /* Sparkle.framework in Copy Sparkle */ = {isa = PBXBuildFile; fileRef = CB0F50411B1FC06400882B6F /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB0F50461B1FC28400882B6F /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = CB0F50451B1FC28400882B6F /* dsa_pub.pem */; };
 		CB74A7511B1F089200A05F6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74A7501B1F089200A05F6F /* AppDelegate.swift */; };
 		CB74A7531B1F089200A05F6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB74A7521B1F089200A05F6F /* Images.xcassets */; };
 		CB74A7561B1F089200A05F6F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB74A7541B1F089200A05F6F /* MainMenu.xib */; };
@@ -28,12 +31,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CB0F50431B1FC09600882B6F /* Copy Sparkle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB0F50441B1FC0C100882B6F /* Sparkle.framework in Copy Sparkle */,
+			);
+			name = "Copy Sparkle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		414EE38EE5D28A502F81B716 /* Pods-momendlos_Desktop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-momendlos_Desktop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-momendlos_Desktop/Pods-momendlos_Desktop.debug.xcconfig"; sourceTree = "<group>"; };
 		89725B476C423DA3CF27B8DD /* Pods_momendlos_Desktop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_momendlos_Desktop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB02E2311B1F0A1200593083 /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		CB02E2351B1F0B0E00593083 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		CB02E2361B1F0B0E00593083 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		CB0F50411B1FC06400882B6F /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		CB0F50451B1FC28400882B6F /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		CB74A74B1B1F089200A05F6F /* momendlos_Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = momendlos_Desktop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB74A74F1B1F089200A05F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB74A7501B1F089200A05F6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +73,7 @@
 				458F9E4F2F5DB2E633759222 /* Pods_momendlos_Desktop.framework in Frameworks */,
 				CB02E2381B1F0B0E00593083 /* Crashlytics.framework in Frameworks */,
 				CB02E2371B1F0B0E00593083 /* Fabric.framework in Frameworks */,
+				CB0F50421B1FC06400882B6F /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +115,7 @@
 		CB74A7421B1F089200A05F6F = {
 			isa = PBXGroup;
 			children = (
+				CB0F50451B1FC28400882B6F /* dsa_pub.pem */,
 				CB74A74D1B1F089200A05F6F /* momendlos_Desktop */,
 				CB74A75E1B1F089200A05F6F /* momendlos_DesktopTests */,
 				CB74A74C1B1F089200A05F6F /* Products */,
@@ -153,6 +174,7 @@
 		CD106169DE5BDA4EE80097C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB0F50411B1FC06400882B6F /* Sparkle.framework */,
 				CB02E2351B1F0B0E00593083 /* Fabric.framework */,
 				CB02E2361B1F0B0E00593083 /* Crashlytics.framework */,
 				89725B476C423DA3CF27B8DD /* Pods_momendlos_Desktop.framework */,
@@ -174,6 +196,7 @@
 				EEA0E17F11D0DE6C9298881D /* Embed Pods Frameworks */,
 				ED374DAEB4C136A90A10F66F /* Copy Pods Resources */,
 				CB02E2341B1F0ACE00593083 /* Fabric Crashlytics */,
+				CB0F50431B1FC09600882B6F /* Copy Sparkle */,
 			);
 			buildRules = (
 			);
@@ -245,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB74A7531B1F089200A05F6F /* Images.xcassets in Resources */,
+				CB0F50461B1FC28400882B6F /* dsa_pub.pem in Resources */,
 				CB74A7561B1F089200A05F6F /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +478,17 @@
 				);
 				INFOPLIST_FILE = momendlos_Desktop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"JSONJoy\"",
+					"-Wl,-rpath,@loader_path/../Frameworks",
+					"-framework",
+					"\"SwiftHTTP\"",
+					"-framework",
+					"\"SwiftyTimer\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -470,6 +505,17 @@
 				);
 				INFOPLIST_FILE = momendlos_Desktop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"JSONJoy\"",
+					"-Wl,-rpath,@loader_path/../Frameworks",
+					"-framework",
+					"\"SwiftHTTP\"",
+					"-framework",
+					"\"SwiftyTimer\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
