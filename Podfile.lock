@@ -1,14 +1,17 @@
 PODS:
+  - IYLoginItem (0.1)
   - JSONJoy-Swift (0.9.2)
   - SwiftHTTP (0.9.5)
   - SwiftyTimer (1.1.0)
 
 DEPENDENCIES:
+  - IYLoginItem
   - JSONJoy-Swift (~> 0.9.1)
   - SwiftHTTP (~> 0.9.4)
   - SwiftyTimer
 
 SPEC CHECKSUMS:
+  IYLoginItem: e57a86b39d3b9ab0e2fc033adedae01efafd9adf
   JSONJoy-Swift: d51bde1053047c623db602e778f068414dd788e4
   SwiftHTTP: cd7b248bc07db02926ff54cf19b580b78f7abfa1
   SwiftyTimer: 3b1bf42c8b1bb09dff7107b12d3b73cbf700bbce

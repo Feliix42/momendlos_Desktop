@@ -13,6 +13,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="momendlos_Desktop" customModuleProvider="target">
             <connections>
+                <outlet property="momendMenu" destination="rRD-Jm-ZUa" id="X6D-tS-PgM"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -675,23 +676,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
             </view>
+            <point key="canvasLocation" x="137" y="541"/>
         </window>
         <menu id="rRD-Jm-ZUa">
             <items>
-                <menuItem title="Item 1" id="T92-6b-fXG">
+                <menuItem isSeparatorItem="YES" id="MwP-93-QQ1"/>
+                <menuItem title="Settings" id="QNV-ls-OCd">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
-                <menuItem title="Item 2" id="npr-aa-Eal">
+                <menuItem title="Quit" id="jb1-2J-FW8">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="Check for Updates" id="7bL-jb-SLd">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="checkForUpdates:" target="UJH-zo-kAd" id="85n-CS-hmd"/>
-                    </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="376" y="261.5"/>
+            <point key="canvasLocation" x="146" y="207.5"/>
         </menu>
         <customObject id="UJH-zo-kAd" customClass="SUUpdater"/>
     </objects>

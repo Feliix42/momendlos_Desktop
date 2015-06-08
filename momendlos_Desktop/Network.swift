@@ -8,12 +8,24 @@
 
 import Foundation
 import SwiftHTTP
+import JSONJoy
 
 
-func checkJSON(requestMethod: String){
-    
-    
-    
+func checkImage(urlString: String, completed: (image:Image) -> ()) {
+    var request = HTTPTask()
+    request.requestSerializer = HTTPRequestSerializer()
+    request.responseSerializer = JSONResponseSerializer()
+    request.GET(urlString, parameters: nil, completionHandler: {(response: HTTPResponse) in
+        if let err = response.error {
+            let errorData: [String:AnyObject] = ["title" : "No Data"]
+            let resp = Image(JSONDecoder(errorData))
+            completed(image: resp)
+        }
+        if let obj: AnyObject = response.responseObject {
+            let resp = Image(JSONDecoder(obj))
+            completed(image: resp)
+        }
+    })
 }
 
 func downloadImage(image: String){

@@ -17,10 +17,18 @@ import Crashlytics
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
+    @IBOutlet weak var momendMenu: NSMenu!
+    @IBOutlet weak var lastImage: NSMenuItem!
+    
+    let version = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         Fabric.with([Crashlytics()])
+        
+        UI.shared().startUI()
+        
+
 
     }
 

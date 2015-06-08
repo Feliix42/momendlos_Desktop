@@ -15,6 +15,7 @@
 		CB0F50441B1FC0C100882B6F /* Sparkle.framework in Copy Sparkle */ = {isa = PBXBuildFile; fileRef = CB0F50411B1FC06400882B6F /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB0F50461B1FC28400882B6F /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = CB0F50451B1FC28400882B6F /* dsa_pub.pem */; };
 		CB0F50481B25C82A00882B6F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F50471B25C82A00882B6F /* Network.swift */; };
+		CB0F504A1B25E05100882B6F /* ImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F50491B25E05100882B6F /* ImageList.swift */; };
 		CB74A7511B1F089200A05F6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74A7501B1F089200A05F6F /* AppDelegate.swift */; };
 		CB74A7531B1F089200A05F6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB74A7521B1F089200A05F6F /* Images.xcassets */; };
 		CB74A7561B1F089200A05F6F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB74A7541B1F089200A05F6F /* MainMenu.xib */; };
@@ -55,6 +56,7 @@
 		CB0F50411B1FC06400882B6F /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		CB0F50451B1FC28400882B6F /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		CB0F50471B25C82A00882B6F /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		CB0F50491B25E05100882B6F /* ImageList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageList.swift; sourceTree = "<group>"; };
 		CB74A74B1B1F089200A05F6F /* momendlos_Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = momendlos_Desktop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB74A74F1B1F089200A05F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB74A7501B1F089200A05F6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				CB74A76B1B1F08B500A05F6F /* Local.swift */,
 				CB0F50471B25C82A00882B6F /* Network.swift */,
+				CB0F50491B25E05100882B6F /* ImageList.swift */,
 			);
 			name = Image;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				CB74A7511B1F089200A05F6F /* AppDelegate.swift in Sources */,
 				CB0F50481B25C82A00882B6F /* Network.swift in Sources */,
 				CB74A76C1B1F08B500A05F6F /* Local.swift in Sources */,
+				CB0F504A1B25E05100882B6F /* ImageList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
