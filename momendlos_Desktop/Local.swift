@@ -10,9 +10,10 @@ import Foundation
 import Cocoa
 import AppKit
 
-func setWallpaper(){
+func setWallpaper(image: String){
     
-    let imgurl : NSURL = NSURL.fileURLWithPath("/Users/h4llow3En/Desktop/IMG_1399.JPG")!
+    let path = NSSearchPathForDirectoriesInDomains(.PicturesDirectory, .UserDomainMask, true).first as? String
+    let imgurl : NSURL = NSURL.fileURLWithPath("\(path)/.momendlos/\(image)")!
     var error : NSError?
     let workspace = NSWorkspace.sharedWorkspace()
     let screentest = NSScreen.mainScreen()
@@ -23,3 +24,4 @@ func setWallpaper(){
     }
     
 }
+

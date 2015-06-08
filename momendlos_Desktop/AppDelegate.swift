@@ -22,7 +22,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         Fabric.with([Crashlytics()])
 
-        setWallpaper()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -31,4 +30,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
 }
-
