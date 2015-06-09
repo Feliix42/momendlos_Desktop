@@ -28,15 +28,16 @@ func checkImage(urlString: String, completed: (image:Image) -> ()) {
     })
 }
 
-func downloadImage(image: String){
+func downloadImage(image: String, completed: (result:Bool) -> ()){
     var request = HTTPTask()
+    print(image)
     let downloadTask = request.download("https://download.momendlos.de/\(image)", parameters: nil, progress: {(complete: Double) in
-        println("percent complete: \(complete)")
         }, completionHandler: {(response: HTTPResponse) in
-            println("download finished!")
+            println("\ndownload finished!")
             if let err = response.error {
                 println("error: \(err.localizedDescription)")
-                return //also notify app of failure as needed
+                completed(result: false)
+                return//also notify app of failure as needed
             }
             if let url = response.responseObject as? NSURL {
                 //we MUST copy the file from its temp location to a permanent location.
@@ -48,6 +49,7 @@ func downloadImage(image: String){
                             let filePath = NSURL(fileURLWithPath: "\(path)/.momendlos/\(fileName)")!
                             fileManager.removeItemAtURL(filePath, error: nil)
                             fileManager.moveItemAtURL(url, toURL: filePath, error:nil)
+                            completed(result: true)
                         }
                     }
                 }

@@ -21,36 +21,82 @@ class UI{
     
     let momendMenu = (NSApplication.sharedApplication().delegate as! AppDelegate).momendMenu
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
-    var method: Int
-    
-    init(){
-        method = NSUserDefaults.standardUserDefaults().integerForKey("method")
-    }
+
     
     
     // to build UI on startup
     func startUI(){
         var currImage: NSMenuItem
-        if let lastImage: AnyObject = NSUserDefaults.standardUserDefaults().objectForKey("lastImage") {
-            let current = Image(JSONDecoder(lastImage))
-            currImage = NSMenuItem(title: current.title!, action: Selector(), keyEquivalent: "")
-            setWallpaper(current.filename!)
+        if let lastImage: String = NSUserDefaults.standardUserDefaults().objectForKey("lastImage") as? String {
+            if let lastFile: String = NSUserDefaults.standardUserDefaults().objectForKey("lastFile") as? String {
+                
+                let lastData: [String:AnyObject] = ["title" : "\(lastImage)"]
+                let current = Image(JSONDecoder(lastImage))
+                currImage = NSMenuItem(title: current.title!, action: Selector(), keyEquivalent: "")
+                setWallpaper(current.filename!)
+            } else {
+                currImage = NSMenuItem(title: "Failed to load", action: Selector(), keyEquivalent: "")
+            }
         } else{
             currImage = NSMenuItem(title: "No Photo yet", action: Selector(), keyEquivalent: "")
         }
         momendMenu.insertItem(currImage, atIndex: 0)
-        statusItem.title = "momendlos"
-        statusItem.title = "momendlos"
+        let icon = NSImage(named: "menuBar")
+        icon?.setTemplate(true)
+        statusItem.image = icon
         statusItem.menu = momendMenu
             
 
     }
     
-    func updateImageName(newImage: Image){
-        NSUserDefaults.standardUserDefaults().setValue(newImage, forKey: "lastImage")
+    func updateImage(newImage: Image){
+        NSUserDefaults.standardUserDefaults().setObject(newImage.title!, forKey: "lastImage")
+        NSUserDefaults.standardUserDefaults().setObject(newImage.filename!, forKey: "lastfile")
         momendMenu.removeItemAtIndex(0)
         momendMenu.insertItem(NSMenuItem(title: newImage.title!, action: Selector(), keyEquivalent: ""), atIndex: 0)
+        setWallpaper(newImage.filename!)
         
     }
 
+}
+
+func runUpdate(){
+    
+    let method = (NSApplication.sharedApplication().delegate as! AppDelegate).method
+    var methodVal:String
+    
+    switch(method){
+    case 0:
+        methodVal = "last"
+    case 1:
+        methodVal = "random"
+    case 2:
+        methodVal = "next"
+    default:
+        methodVal = "last"
+    }
+    
+    let url = "https://download.momendlos.de/getImage.php?method=\(methodVal)"
+    
+    checkImage(url){
+        (imageData) in
+        
+        if imageData.title! != "No Data" {
+        
+            let localImages = getLocalImages()
+            
+            let exists = contains(localImages, imageData.filename!)
+            
+            if exists {
+                UI.shared().updateImage(imageData)
+            } else {
+                downloadImage(imageData.filename!){
+                    (completed) in
+                    if completed {
+                        UI.shared().updateImage(imageData)
+                    }
+                }
+            }
+        }
+    }
 }

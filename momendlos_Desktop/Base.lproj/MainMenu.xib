@@ -14,6 +14,9 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="momendlos_Desktop" customModuleProvider="target">
             <connections>
                 <outlet property="momendMenu" destination="rRD-Jm-ZUa" id="X6D-tS-PgM"/>
+                <outlet property="quitButton" destination="jb1-2J-FW8" id="2ah-3g-due"/>
+                <outlet property="selectedMethod" destination="DF8-fE-cKy" id="N5m-xm-D82"/>
+                <outlet property="startAtLoginCheckbox" destination="pJ0-IZ-Dpr" id="iXj-CM-Zfa"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -670,22 +673,74 @@
         <window title="momendlos_Desktop" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="contentRect" x="335" y="390" width="387" height="161"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="387" height="161"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SvD-x6-wgD">
+                        <rect key="frame" x="41" y="124" width="328" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Method" id="Bsw-Q0-LVN">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mQU-2H-zJI">
+                        <rect key="frame" x="37" y="13" width="154" height="32"/>
+                        <buttonCell key="cell" type="push" title="Check for updates" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Uqd-Dd-Hjj">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="checkForUpdates:" target="UJH-zo-kAd" id="Ddw-9k-Ief"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJ0-IZ-Dpr">
+                        <rect key="frame" x="41" y="59" width="146" height="18"/>
+                        <buttonCell key="cell" type="check" title="Start at Login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="rBd-c6-hIL">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="startAtLogin:" target="Voe-Tx-rLC" id="2ku-NY-2Wv"/>
+                        </connections>
+                    </button>
+                    <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v3L-Ao-VTe">
+                        <rect key="frame" x="43" y="92" width="327" height="26"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="DF8-fE-cKy">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <objectValues>
+                                <string>Last Image</string>
+                                <string>Random Slideshow</string>
+                                <string>Ordered Slideshow</string>
+                            </objectValues>
+                            <connections>
+                                <action selector="selectMethod:" target="Voe-Tx-rLC" id="Zkr-Kk-tg5"/>
+                            </connections>
+                        </comboBoxCell>
+                    </comboBox>
+                </subviews>
             </view>
-            <point key="canvasLocation" x="137" y="541"/>
+            <point key="canvasLocation" x="90.5" y="441.5"/>
         </window>
         <menu id="rRD-Jm-ZUa">
             <items>
                 <menuItem isSeparatorItem="YES" id="MwP-93-QQ1"/>
                 <menuItem title="Settings" id="QNV-ls-OCd">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openSettings:" target="Voe-Tx-rLC" id="OYO-uc-h75"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="Quit" id="jb1-2J-FW8">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="clickQuit:" target="Voe-Tx-rLC" id="X84-ju-wFv"/>
+                    </connections>
                 </menuItem>
             </items>
             <point key="canvasLocation" x="146" y="207.5"/>
