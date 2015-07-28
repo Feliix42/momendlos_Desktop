@@ -6,16 +6,16 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
-            <title>Version 1.0</title>
+            <title>Version 1.1</title>
             <description><![CDATA[
-                <h1>Release:</h1><br><p>first Version of momendlos Desktop</p>
+                <h1>Bugfix:</h1><br>App does not crash anymore when network request is not completed<p></p>
             ]]>
             </description>
-            <pubDate>Tue, 09 Jun 2015 15:25:50 +0000</pubDate>
-            <enclosure url="https://github.com/h4llow3En/momendlos_Desktop/releases/download/v1.0/momendlos.zip"
-            sparkle:version="1"
-            sparkle:shortVersionString="1.0"
-            sparkle:dsaSignature="MCwCFHv7h85ogUxAs5SfwRAQOxiv1lA6AhQqSj6TKTXQBBUTDetZvpC8nWkAwA==
+            <pubDate>Tue, 28 Jul 2015 10:54:04 +0000</pubDate>
+            <enclosure url="https://github.com/h4llow3En/momendlos_Desktop/releases/download/v1.1/momendlos.zip"
+            sparkle:version="2"
+            sparkle:shortVersionString="1.1"
+            sparkle:dsaSignature="MC0CFQCKz8j65ee2duGH4FIaF1geG0jQ3wIURAjZzzB8cJsh6koYKFbIFwwbTqA=
 "
             type="application/octet-stream" />
 
