@@ -11,20 +11,18 @@ import SwiftHTTP
 import JSONJoy
 
 
-func checkImage(urlString: String, completed: (image:Image) -> ()) {
+func checkImage(urlToRequest: String, completed: (image:Image) -> ()) {
     var request = HTTPTask()
-    request.requestSerializer = HTTPRequestSerializer()
-    request.responseSerializer = JSONResponseSerializer()
-    request.GET(urlString, parameters: nil, completionHandler: {(response: HTTPResponse) in
-        if let err = response.error {
+    request.GET(urlToRequest, parameters: nil, success: {(response: HTTPResponse) in
+        if let data = response.responseObject as? NSData {
+            var resp = Image(JSONDecoder(data))
+            completed(image: resp)
+        }
+        },failure: {(error: NSError, response: HTTPResponse?) in
+            
             let errorData: [String:AnyObject] = ["title" : "No Data"]
             let resp = Image(JSONDecoder(errorData))
             completed(image: resp)
-        }
-        if let obj: AnyObject = response.responseObject {
-            let resp = Image(JSONDecoder(obj))
-            completed(image: resp)
-        }
     })
 }
 
@@ -32,13 +30,8 @@ func downloadImage(image: String, completed: (result:Bool) -> ()){
     var request = HTTPTask()
     print(image)
     let downloadTask = request.download("https://download.momendlos.de/\(image)", parameters: nil, progress: {(complete: Double) in
-        }, completionHandler: {(response: HTTPResponse) in
+        }, success: {(response: HTTPResponse) in
             println("\ndownload finished!")
-            if let err = response.error {
-                println("error: \(err.localizedDescription)")
-                completed(result: false)
-                return//also notify app of failure as needed
-            }
             if let url = response.responseObject as? NSURL {
                 //we MUST copy the file from its temp location to a permanent location.
                 if let path = NSSearchPathForDirectoriesInDomains(.PicturesDirectory, .UserDomainMask, true).first as? String {
@@ -55,5 +48,6 @@ func downloadImage(image: String, completed: (result:Bool) -> ()){
                 }
             }
             
-    })
+        },failure: {(error: NSError, response: HTTPResponse?) in
+            completed(result: false)})
 }
