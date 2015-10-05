@@ -7,7 +7,7 @@ This is an application for Mac OS X 10.10+ that connects momendlos with you Desk
 ### How to use
 
 There are several possibilities to use this software:
-- always have the latest photo from momendlos as you wallpaper
+- always have the latest photo from momendlos as your wallpaper
 - have a random slideshow
 - have an ordered slideshow
 
